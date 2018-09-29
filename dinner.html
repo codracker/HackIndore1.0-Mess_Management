@@ -1,0 +1,25 @@
+ <div id="piechart"></div>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['MENU', 'SELECTIONS'],
+                                    ['SEV TAMATO', 10],
+                                    ['DUM AALO', 9],
+                                    ['SPICY BHINDI', 8],
+                                    ['VEG MANCHURIYAN', 7],
+                                    ['AALO GOBI', 3],
+                                    ['MUTTAR AALO', 5],
+                                    ['CHOLE', 2],
+                                    ['DAL MAKHANI', 6],
+                                    ['PANEER MAKHANI', 7],
+                                    ['MIX DAL', 8]
+                                ]);
+                                var options = {'title':'DINNER', 'width':550, 'height':400};
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+            

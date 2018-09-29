@@ -1,0 +1,25 @@
+ <div id="piechart"></div>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['MENU', 'SELECTIONS'],
+                                    ['AALO PRATHA', 10],
+                                    ['GOBI PRATHA', 2],
+                                    ['PANEER PRATHA', 4],
+                                    ['IDLI', 6],
+                                    ['KHAMAN', 7],
+                                    ['DOSA', 9],
+                                    ['POHA', 7],
+                                    ['UPMA', 1],
+                                    ['UTHPAM', 9],
+                                    ['WADA SAMBHAR', 8]
+                                ]);
+                                var options = {'title':'BREAKFAST', 'width':550, 'height':400};
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+                 

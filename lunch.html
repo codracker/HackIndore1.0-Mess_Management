@@ -1,0 +1,24 @@
+ <div id="piechart"></div>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['MENU', 'SELECTIONS'],
+                                    ['AALO SABJI', 10],
+                                    ['BHINDI', 9],
+                                    ['CHOLE', 8],
+                                    ['GOBI', 7],
+                                    ['PATTA GOBI', 3],
+                                    ['MIX VEG', 2],
+                                    ['SEV TAMATAR', 2],
+                                    ['KADI', 6],
+                                    ['PANEER', 7],
+                                    ['SHAHI PANEER', 8]
+                                ]);
+                                var options = {'title':'LUNCH', 'width':550, 'height':400};
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>

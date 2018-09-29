@@ -1,0 +1,24 @@
+ <div id="piechart"></div>
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                    ['MENU', 'SELECTIONS'],
+                                    ['UTMA', 10],
+                                    ['VEG PETTIES', 9],
+                                    ['MOONG KACHORI', 8],
+                                    ['POHA', 7],
+                                    ['MACRONI', 3],
+                                    ['CHAT BHEL', 5],
+                                    ['FRIED IDLI', 2],
+                                    ['SAMOSA', 6],
+                                    ['CHINESE BHEL', 7]
+                                ]);
+                                var options = {'title':'SNACKS', 'width':550, 'height':400};
+                                var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+                                chart.draw(data, options);
+                            }
+                        </script>
+               
