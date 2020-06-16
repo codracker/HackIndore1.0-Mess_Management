@@ -1,2 +1,2 @@
 # Mess-managing
-This repository is regarding the mess managing system.
+Every hosteller has an issue with the menu and the food served to them in hostels. So keeping the same in mind, a project is developed which seeks to solve issues of the mess. It consolidates both the individuals that is one the admin(mess owner) and the other studentadmin(student). So, keeping both the sides in mind and how customisation , notifications, updations can be made to the old and ever running mess systems can be modified as per the needs. This projects holds in as much customisation of the system as possble.
