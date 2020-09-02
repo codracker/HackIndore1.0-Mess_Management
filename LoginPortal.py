@@ -4,4 +4,4 @@ app = Flask(__name__)
 def lp():
     return render_template('C:/Users/Aditya Sharma/Desktop/HackIndore/templates/LoginPortal.html')
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(debug=True/fALS)
